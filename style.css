@@ -4,10 +4,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
-    float:right ;
+    right:0 ;
     z-index: 1;
-    position:relative
+    position:fixed;
 }
 
 li {
@@ -26,20 +30,41 @@ a {
     font-size: 20px;
 }
 
-.fir-part {
+#fir-part {
     background-color: red;
     height: 100vh;
     position:relative;
 }
 
-.sec-part {
+#sec-part {
     background-color: green;
     position: relative;
     height: 100vh;
 }
 
-.thi-part {
+#thi-part {
     background-color: yellow;
     position: relative;
     height: 100vh;
+}
+
+img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color:yellow;
+    font-size: 30px;
+    height:30px;
+    position: absolute;
+    bottom:15%;
+    left:50%;
+    transform: translate(-50%, -15%);
+}
+
+#thi-part h1 {
+    color: green;
 }
